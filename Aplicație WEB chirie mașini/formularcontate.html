@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB.cars</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            /* Fundal gri deschis */
+            color: #333;
+            /* Culoare text închisă pentru lizibilitate */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        nav {
+            background-color: #4CAF50;
+            /* Culoare verde pentru bara de navigare */
+            padding: 10px 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            /* Culoare albă pentru textul linkurilor */
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            background-color: #ffffff;
+            /* Fundal alb pentru  */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 900px;
+            width: 100%;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        h1 {
+            color: #4CAF50;
+            /* Culoare verde pentru titlu */
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #2196F3;
+            /* Culoare albastră pentru subtitlu */
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h3 {
+            color: #FF5722;
+            /* Culoare portocalie pentru titlurile secțiunilor */
+            margin-bottom: 10px;
+        }
+
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .section ul li {
+            background: #f1f1f1;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        footer {
+            
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #FFD700;
+            /* Culoare aurie pentru linkuri */
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+            position: fixed; bottom: 0;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="alegere_masini.html">Lista de automobile</a></li>
+            <li><a href="formularcontate.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="home">
+        <h2>Introduceti datele personale pentru concretizarea detaliilor</h2>
+        
+        <form>
+
+            <label for="firstname">Prenume</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Exemplu: Adrian"/>
+            <br>
+            <label for="telefon">Nr de telefon</label>
+            <input type="text" id="telefon" name="telefon" placeholder="Exemplu: 078236589" required minlength="9" maxlength="9"/>
+            <br>
+            <br>
+            <input type="radio" name="tip_contactare" value="Apel">Convorbire 
+            <br>
+            <input type="radio" name="tip_contactare" value="Mesaj">Prin mesaj
+            <br>
+            <br>
+            <label for="detalii_comanda">Detalii comanda</label>
+            <br>
+            <textarea name="" id="detalii_comanda" cols="20" rows="5" placeholder="Exemplu: Transportul, termenul"></textarea>
+            <br>
+            <button type="submit">Trimite</button>
+            <button type="reset">Resetare date</button>
+
+        
+
+        </form>
+
+    </div>
+        
+       
+
+    <footer>
+        &copy; 2024 WEB.cars. <a href="Politica.html">Lungu Adrian</a>
+    </footer>
+</body>
+
+</html>
